@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Roboto+Condensed:wght@300&display=swap'); /* Elegant fonts */
+
+/* Container for the entire wedding section */
+.wedding-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+  
+
+}
+
+/* Wedding card styles */
+.wedding-card {
+  background-color: rgba(255, 255, 255, 0.075); /* Keep the transparent background */
+  padding: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.9); /* Stronger white border */
+  border-radius: 12px; /* Smooth corners */
+  text-align: center; /* Center-align text */
+  max-width: 500px;
+  width: 90%;
+  color: #ffffff !important; /* Strong white text, with !important to override any other styles */
+  font-family: 'Playfair Display', serif; /* Elegant font for headings and content */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a polished shadow effect */
+  margin-bottom: 410px;
+  z-index: 0;
+}
+
+/* Title of the wedding */
+.wedding-title {
+  margin-top: 0;
+  margin-bottom: 20px; /* Adds space below the title */
+  font-size: 28px; /* Larger, elegant font for heading */
+  font-weight: 400; /* Thin yet refined */
+  color: #ffffff !important; /* Ensure the title is super white */
+  font-family: 'Playfair Display', serif;
+  
+}
+
+/* Wedding details text */
+.wedding-details {
+  margin: 10px 0; /* Adds space between paragraphs */
+  font-size: 18px; /* Clean, readable font for text */
+  line-height: 1.6; /* Improves readability */
+  color: #ffffff !important; /* Ensure the details are super white */
+}
+
+/* Footer text */
+.wedding-footer {
+  margin-top: 30px; /* Adds extra space above the footer text */
+  font-size: 16px; /* Slightly smaller for the footer text */
+  font-style: italic; /* Adds an elegant touch */
+  line-height: 1.4; /* Keeps it compact but readable */
+  color: #ffffff !important; /* Ensure the footer text is super white */
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.white-block {
+    background-color: #ffffff; /* White background */
+    height: 100px; /* Adjustable height */
+    width: 100%; /* Full width of the page */
+    display: block; /* Ensures it behaves as a block element */
+    margin: 0; /* Removes any default margins */
+    padding: 0; /* Removes any default padding */
+    z-index: 1; /* Ensures it's on top if overlapping occurs */
+}
+.double-display-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adjust spacing between images */
+}
+
+.twin-image-slot {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Adjust height as needed */
+}
+.scrolling-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scrolling-track {
+  display: flex;
+  gap: 20px; /* Space between images */
+  animation: scrollImages 20s linear infinite;
+  width: max-content;
+}
+
+.scrolling-track img {
+  max-height: 300px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@keyframes scrollImages {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
+}
